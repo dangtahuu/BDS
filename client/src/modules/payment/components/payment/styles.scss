@@ -1,0 +1,99 @@
+h2 {
+    margin: 5px 0 15px;
+    text-align: center;
+}
+
+.ant-modal {
+    width: 370px !important;
+
+    .ant-modal-content {
+
+        border-radius: 15px;
+
+        .ant-modal-body {
+            padding: 20px !important;
+
+            .modal-transaction {
+                .type {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    .icon {
+                        align-items: center;
+                        display: flex;
+                        font-size: 42px;
+                        margin-right: 12px;
+                    }
+
+                    .transaction {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            font-size: 17px;
+                            text-transform: uppercase;
+                        }
+
+                        span:nth-child(1) {
+                            font-weight: 400;
+                            // color: #5f5e5e;
+                        }
+
+                        span:nth-child(2) {
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+
+                ul {
+                    border-bottom: 1px dashed #ccc;
+
+                    li {
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        span:nth-child(1) {
+                            color: #6f6e6e;
+                            font-weight: 400;
+
+                        }
+
+                        span:nth-child(2) {
+                            font-weight: 600;
+                        }
+
+                        .title-post {
+                            width: 72%;
+                            height: 22px;
+                            display: -webkit-box;
+                            text-align: end;
+                            overflow: hidden;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                }
+
+                .balance {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    span:nth-child(1) {
+                        color: #6f6e6e;
+                        font-weight: 400;
+
+                    }
+
+                    span:nth-child(2) {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,62 @@
+:root {
+    --blue: #5479ff;
+    --white: #ffffff;
+    --max: 9999px;
+    --gray: #bfbfbf;
+    --red: #E4405F;
+}
+
+.ant-modal-wrap {
+    overflow-x: hidden;
+    
+    .modal {
+        padding: 0;
+        width: 700px !important;
+
+        .ant-modal-content {
+            height: 100%;
+
+            .ant-modal-body {
+                padding: 0 !important;
+                height: 87%;
+
+                .detail-post-item {
+                    height: 100%;
+
+                    .class {
+                        display: flex;
+                        justify-content: flex-start;
+                        border-bottom: 1px solid #ccc;
+
+                        button {
+                            height: 40px;
+                            display: inline-block;
+                            border-radius: 0px;
+                            cursor: pointer;
+                            white-space: nowrap;
+                            width: fit-content;
+                            background-color: rgb(255, 255, 255);
+                            padding: 10px 16px 8px 20px;
+                            color: rgb(44, 44, 44);
+                            opacity: 1;
+                            border-top: 0px;
+                            border-left: 0px;
+                            border-image: initial;
+                            border-right: none;
+                        }
+
+                        button:hover {
+                            font-weight: bold;
+                            border-bottom: 2px solid #e03c31;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+
+
+}

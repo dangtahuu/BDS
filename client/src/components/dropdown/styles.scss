@@ -1,0 +1,13 @@
+.dropdown {
+    position: relative !important;
+    width: 25%;
+
+    ul {
+        border-bottom: transparent !important;
+        justify-content: center;
+
+        li::after {
+            border-bottom: transparent !important
+        }
+    }
+}

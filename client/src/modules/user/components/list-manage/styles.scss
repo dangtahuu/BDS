@@ -1,0 +1,52 @@
+.user-list-item-magage-avatar{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafbfc;
+    border: 1px solid #e8edf0;
+    border-radius: 4px;
+    padding: 6px 2px;
+}
+
+.user-list-item-magage-avatar > img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.badge-user-list{
+    border-radius: 1rem;
+    margin: 0rem 0.5rem 0.5rem 0rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    height: 30px;
+}
+
+.badge-active {
+    background-color: rgb(201, 209, 185);
+}
+
+.badge-user {
+    background-color: rgb(194, 235, 141);
+}
+
+.badge-admin {
+    background-color: rgb(141, 216, 235);
+}
+
+.select-user-role {
+    width: 100%;
+}
+
+.select-user-role > div{
+    border: none !important;
+    padding: 0px !important;
+    width: 100% !important;
+}
+
+// .select-user-role:focus-within {
+//     border: none !important;
+//     outline: 0 !important;
+// }

@@ -1,0 +1,15 @@
+.app-content {
+    background: #ffff;
+    // padding: 0 7%;
+    margin: 0;
+  
+    overflow-x: scroll;
+    overflow: auto;
+    margin-top: 76px;
+  }
+  
+  .ant-layout-content {
+    min-height: 81vh !important;
+    border-left: solid 1px rgba(0, 0, 0, 0.5) !important;
+  }
+  

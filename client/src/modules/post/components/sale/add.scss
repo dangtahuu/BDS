@@ -1,0 +1,46 @@
+.form-item {
+    padding: 1.5rem;
+    margin: 2.5rem 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+
+.but-post {
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.selectFee {
+    display: flex;
+    justify-content: space-between;
+
+    .payment {
+        width: 40%;
+
+        ul {
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+                span {
+
+                    &:nth-child(2) {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .payment-total {
+                padding-top: 20px;
+                border-top: 1px solid rgb(217, 216, 216);
+            }
+        }
+
+
+    }
+}

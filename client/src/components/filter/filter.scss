@@ -1,0 +1,100 @@
+#post-filter {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+
+    .radio {
+        margin-bottom: 0;
+
+        .radioGroup {
+            display: flex;
+            margin: 6px 0 0 15px;
+            text-align: center;
+            color: #000 !important;
+
+            label:nth-child(1) {
+                height: 36px;
+                padding-top: 2px;
+                border-radius: 6px 0 0 6px;
+            }
+
+            label:nth-child(2) {
+                height: 36px;
+                padding-top: 2px;
+                border-radius: 0 6px 6px 0;
+            }
+        }
+    }
+
+    .search-home {
+        padding: 3rem;
+
+        .search-box {
+            display: flex;
+
+            .ant-form-item:nth-child(2) {
+                // width: 100%;
+            }
+        }
+    }
+
+    .ant-row {
+        // display: grid;
+        margin-top: 1rem;
+        align-items: center;
+
+        .ant-form-item-row {
+            display: grid;
+
+            .ant-col {
+                text-align: left;
+
+                label::before,
+                ::after {
+                    display: none;
+                }
+
+                label {
+                    font-size: 1.5rem;
+                    // color: rgb(180, 180, 180);
+                }
+
+                .ant-select-selector {
+                    background-color: rgba(0, 0, 0, 0);
+                    /* padding: 0.5em 1.5em 0.5em 1em; */
+                    background-position: right 5px top 12px;
+                    // color: #fff;
+                    font-size: 1.5rem;
+                    height: 36px;
+                    width: 200px;
+                    border-radius: 6px;
+                    align-items: center;
+                    padding: 0 12px;
+                }
+
+                .ant-select-arrow {
+                    padding-right: 12px;
+                }
+
+                input {
+                    height: 100%;
+                }
+            }
+        }
+
+        .ant-btn:active,
+        .ant-btn:focus {
+            color: #000;
+            background-color: #fff;
+            border: transparent;
+        }
+
+        button {
+            height: 36px;
+            border-radius: 6px;
+            margin: 2rem 10px 0 0;
+            align-items: center;
+        }
+    }
+}

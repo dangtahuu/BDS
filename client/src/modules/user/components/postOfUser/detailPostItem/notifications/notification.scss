@@ -1,0 +1,232 @@
+.notifications {
+    display: flex;
+    height: 100%;
+
+    width: 55%;
+
+    .content {
+        border-right: 1px solid #ccc;
+        width: 100%;
+
+        .in-content {
+
+            // max-height: 580px;
+            height: 100%;
+            overflow: auto;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                width: 0.3rem;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #fff;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: rgb(228, 228, 228);
+                border-radius: 5rem;
+            }
+
+            .noti-item {
+                display: flex;
+                height: 80px;
+                width: 100%;
+                padding-left: 15px;
+                margin-top: 10px;
+                justify-content: space-between;
+                align-items: center;
+                float: left;
+                cursor: pointer;
+
+                .ava-if {
+                    display: flex;
+                    width: 100%;
+
+                    .info {
+                        margin-left: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        width: 80%;
+
+                        .name {
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+
+                        .feedback {
+                            display: flex;
+
+                            .res {
+                                height: 2rem;
+                                max-width: 60px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                            }
+
+                            .time {
+                                display: flex;
+                                flex-direction: column-reverse;
+                                justify-content: center;
+                                color: #adacac;
+
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}
+
+.followers {
+    display: flex;
+    height: 100%;
+    width: 45%;
+
+    .content {
+        width: 100%;
+
+        .in-content {
+
+            // max-height: 580px;
+            height: 100%;
+            overflow: auto;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                width: 0.3rem;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #fff;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: rgb(228, 228, 228);
+                border-radius: 5rem;
+            }
+
+            .noti-item {
+                display: flex;
+                height: 80px;
+                width: 100%;
+                padding-left: 15px;
+                margin-top: 10px;
+                justify-content: space-between;
+                align-items: center;
+                float: left;
+                cursor: pointer;
+
+                .ava-if {
+                    display: flex;
+                    width: 100%;
+
+                    .info {
+                        margin-left: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        width: 80%;
+
+                        .name {
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                        .wrapper {
+                            display: inline-flex;
+                            list-style: none;
+                            padding: 0;
+                            color: #fff;
+
+                            .icon {
+                                position: relative;
+                                background: rgb(189, 189, 189);
+                                border-radius: 50%;
+                                padding: 12px;
+                                margin-right:10px;
+                                width: 8px;
+                                height: 8px;
+                                font-size: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                                cursor: pointer;
+                                transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+                                .tooltip {
+                                    position: absolute;
+                                    top: 0;
+                                    font-size: 13px;
+                                    background: #ffffff;
+                                    color: #ffffff;
+                                    padding: 5px 8px;
+                                    border-radius: 5px;
+                                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                                    opacity: 0;
+                                    pointer-events: none;
+                                    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                                }
+
+                                .tooltip::before {
+                                    position: absolute;
+                                    content: "";
+                                    height: 8px;
+                                    width: 8px;
+                                    background: #ffffff;
+                                    bottom: 20px;
+                                    left: 50%;
+                                    transform: translate(-50%) rotate(45deg);
+                                    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                                }
+                            }
+
+                            .icon:hover .tooltip {
+                                top: 33px;
+                                opacity: 0.9;
+                                visibility: visible;
+                                pointer-events: auto;
+                                z-index: 20000;
+                            }
+
+                            .icon:hover span,
+                            .icon:hover .tooltip {
+                                text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+                            }
+
+                            .phone:hover,
+                            .phone:hover .tooltip,
+                            .phone:hover .tooltip::before {
+                                background: #1877F2;
+                                color: #ffffff;
+                            }
+
+                            .email:hover,
+                            .email:hover .tooltip,
+                            .email:hover .tooltip::before {
+                                background: #E4405F;
+                                color: #ffffff;
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}
